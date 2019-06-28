@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_8034_learnit_table_with_kv">
     <x_8034_learnit_table_with_kv action="INSERT_OR_UPDATE">
         <ds/>
+        <new_column/>
         <nv>{"foo":"blah","bar":"boo"}</nv>
         <sys_class_name>x_8034_learnit_table_with_kv</sys_class_name>
         <sys_created_by>admin</sys_created_by>

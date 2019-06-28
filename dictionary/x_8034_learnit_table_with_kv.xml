@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="update_synch=true" extends="sys_metadata" label="Table with KV" max_length="40" name="x_8034_learnit_table_with_kv" type="collection">
         <element label="ds" max_length="800" name="ds" type="data_structure"/>
+        <element label="New Column" max_length="255" name="new_column" type="string"/>
         <element label="nv" max_length="4000" name="nv" type="simple_name_values"/>
     </element>
 </database>
