@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>test</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var gr = new GlideRecord("x_8034_learnit_table_with_kv");
+gr.newRecord();
+gr.nv.foo = "blah";
+gr.nv.bar = "boo";
+gr.update();
+
+gs.debug(gr.nv);
+
+for(var k in gr.nv){
+	gs.debug(k + ' ' + gr.ds[k]);
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-24 21:25:53</sys_created_on>
+        <sys_id>9670e074db5233000c77560868961917</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="LearnIt" source="x_8034_learnit">66d9d470db5233000c77560868961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LearnIt">66d9d470db5233000c77560868961984</sys_scope>
+        <sys_update_name>sys_script_fix_9670e074db5233000c77560868961917</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-25 22:23:55</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>
